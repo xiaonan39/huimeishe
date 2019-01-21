@@ -1,0 +1,65 @@
+html,body,div,ol,ul,li,h1,h2,h3,h4,h5,h6,img,span,p,a,i,form,label,legend,aside,article,footer,header,nav{
+    margin:0;padding:0;border:0;
+}
+html,body{
+    width:100%;
+    background:#fff;
+}
+ul,li{
+    list-style: none;
+}
+img{
+    display: inline-block;
+    width:100%;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+header{
+    width:100%;
+}
+header>div{
+    margin:0 auto;
+    width:1200px;
+    height:90px;
+}
+#h_logo{
+    float: left;
+    width:20%;
+    height:40.6px;
+    margin-top:30px;
+}
+#h_nav{
+    float:right;
+    height:90px;
+    width:52%;
+    overflow: hidden;
+}
+#h_nav li{
+    float: left;
+    height:90px;
+}
+#h_nav a{
+    width:100px;
+    height:90px;
+    line-height: 90px;
+    text-align: center;
+    color:#533831;
+    font-size: 14px;
+}
+#h_seach{
+    float:right;
+    width:8.75%;
+    height:90px;
+    position: relative;
+}
+#h_seach li{
+    float: left;
+    width:16%;
+    height:90px;
+    text-align: center;
+}
+#h_seach>li>a{
+    color: #56382b;
+}
