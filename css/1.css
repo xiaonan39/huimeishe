@@ -58,8 +58,21 @@ header>div{
     float: left;
     width:16%;
     height:90px;
+    line-height: 90px;
+    margin:5px;
     text-align: center;
 }
-#h_seach>li>a{
-    color: #56382b;
+#h_seach>li>img{
+    width:20px;
+    height:20px;
+}
+#h_seach>li:nth-child(2),#h_seach>li:nth-child(3){
+    position: relative;
+}
+#h_seach>li>ul{
+    /*position:absolute;
+    top:0;
+    left:100px;*/
+    width:250px;
+    border:1px solid rgb(96,54,19);
 }
