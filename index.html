@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <title>汇美舍</title>
     <link rel = "stylesheet" type = "text/css" href = "css/1.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <!---------------------------------------阿里图标-->
+    <link rel = "stylesheet" type = "text/css" href = "./css/download/font_1ntehop46t8/iconfont.css">
+    <!------------------------------------插件-->
+    <script src = "https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
 </head>
 <body>
     <header>
@@ -12,29 +18,352 @@
                 <img src = "./img/logo.png">
             </ul>
             <ul id = "h_seach">
-                <li><img src = "./img/seach.png"/></li>
+                <li><img src = "./img/seach.png"/>
+                </li>
                 <li><img src = "./img/user.png"/>
                     <ul>
-                        <h1>您的账户</h1>
-                        <li>登陆</li>
-                        <li>注册新账号</li>
-                        <li>个人中心</li>
-                        <li>我的收藏</li>
-                        <li>购物车</li>
+                        <li><h2>您的账户</h2></li>
+                        <li><a href = "#" class="red" id = "write">登陆</a></li>
+                        <li><a href = "#" class="red">注册新账号</a></li>
+                        <li><a href = "#"><i class="icon iconfont">&#xe620;</i>个人中心</a></li>
+                        <li><a href = "#"><i class=" icon iconfont">&#xe61c;</i>我的收藏</a></li>
+                        <li><a href = "#"><i class="icon iconfont">&#xe767;</i>购物车</a></li>
+                        <div class = "triangle">
+                            <div class = "triangle1"
+                        </div>
                     </ul>
                 </li>
-                <li><img src = "./img/EN.png"/></li>
+                <li><img src = "./img/EN.png"/>
+                    <ul>
+                        <li><a href = "#" class="Enred"><img src = "./img/meiguo.png" class = "country">English</a></li>
+                        <li><a href = "#" class="Enred"><img src = "./img/jianada.png" class = "country">Canada</a></li>
+                        <li><a href = "#" class="Enred"><img src = "./img/yingguo.png" class = "country">America</a></li>
+                        <div class = "triangle">
+                            <div class = "triangle1"
+                        </div>
+                    </ul>
+                </li>
             </ul>
             <ul id = "h_nav">
+                <li><a href = "#">芳疗课程</a></li>
                 <li><a href = "#">产品系列</a></li>
                 <li><a href = "#">进口产品</a></li>
                 <li><a href = "#">品牌印象馆</a></li>
+                <li><a href = "#">芳聊</a></li>
                 <li><a href = "#">芳香创业</a></li>
             </ul>
         </div>
-    </header>
-    <footer>
+        <!--stealth:隐形-->
+        <div id = "stealth">
+            <div id = "nav_bg">
+                <div class="product">
+                    <li>精油
+                        <!--<div class = "menu">
+                            <h3>精油分类</h3>
+                            <li><a href = "#">植物单方精油</a></li>
+                            <li><a href = "#">星座精油</a></li>
+                            <li><a href = "#">植物基础油</a></li>
+                            <li><a href = "#">空间精油</a></li>
+                            <li><a href = "#">面部复方精油</a></li>
+                            <li><a href = "#">养发复方精油</a></li>
+                            <li><a href = "#">复方滚珠精油</a></li>
+                            <li><a href = "#">家庭保健精油</a></li>
+                        </div>-->
+                    </li>
+                    <li>植物系列
+                        <ul>
+                            <h3>玫瑰</h3>
+                            <li><a href = "#">保加利亚大马士革玫瑰系列（平滑）
+</a></li>
+                            <li><a href = "#">橙花玫瑰系列（亮颜）</a></li>
+                            <li><a href = "#">玫瑰水润系列</a></li>
+                            <li><a href = "#">玫瑰檀香弹力紧实系列</a></li>
+                            <li><a href = "#">玫瑰乳木果莹润紧致系列</a></li>
+                            <li><a href = "#"></a></li>
+                        </ul>
 
+                        <ul>
+                            <h3>玫瑰</h3>
+                            <li><a href = "#">保加利亚大马士革玫瑰系列（平滑）
+                            </a></li>
+                            <li><a href = "#">橙花玫瑰系列（亮颜）</a></li>
+                            <li><a href = "#">玫瑰水润系列</a></li>
+                            <li><a href = "#">玫瑰檀香弹力紧实系列</a></li>
+                            <li><a href = "#">玫瑰乳木果莹润紧致系列</a></li>
+                            <li><a href = "#"></a></li>
+                        </ul>
+                    </li>
+                    <li>功效系列
+                    </li>
+                    <li>面部护理</li>
+                    <li>身体护理</li>
+                    <li>家居香氛</li>
+                    <li>家居浴室</li>
+                    <li>家居用品</li>
+                    <li>礼品</li>
+                </div>
+            </div>
+            <div id = "nav_search">
+                <div class = "nav_search_child">
+                    <input type = "text" placeholder="请输入您的查找内容">
+                    <button>搜索</button>
+                    <div class = "close">
+                        <img src = "./img/close.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!---------------------------------------轮播图及其js-->
+    <article>
+        <div class="swiper-container banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src = "./img/banner5.jpg"></div>
+                <div class="swiper-slide"><img src = "./img/banner6.jpg"></div>
+                <div class="swiper-slide"><img src = "./img/banner7.jpg"></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev _prev"></div>
+            <div class="swiper-button-next _next"></div>
+        </div>
+    </article>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: true,//可选选项，自动滑动
+            loop: true, // 循环模式选项
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+                clickable:true,
+            },
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+    </script>
+    <!-----------------------------------------芳香艺设-->
+    <main>
+        <div class = "_main">
+            <div class = "top">
+                <div class = "top_left">
+                    <img src = "./img/artLogo.png">
+                </div>
+                <div class = "top_right">
+                    <p>芳香艺社</p>
+                    <p>汇美舍旗下芳疗教育机构</p>
+                </div>
+            </div>
+            <div class = "button">
+                <div class = "item">
+                    <a href = "#">
+                        <img src = "./img/artSociety-icon1.png">
+                        <p>学习课程</p>
+                        <p>了解合适自己的学习课程</p>
+                    </a>
+                </div>
+                <div class = "item">
+                    <a href = "#">
+                        <img src = "./img/artSociety-icon2.png">
+                        <p>授课老师</p>
+                        <p>了解合适自己的学习老师</p>
+                    </a>
+                </div>
+                <div class = "item">
+                    <a href = "#">
+                        <img src = "./img/artSociety-icon4.png">
+                        <p>同学会</p>
+                        <p>参加合适自己的同学会</p>
+                    </a>
+                </div>
+                <div class = "item">
+                    <a href = "#">
+                        <img src = "./img/artSociety-icon5.png">
+                        <p>学员账号</p>
+                        <p>课程登记管理</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <aside>
+        <div class = "_aside">
+            <div class = "centre">
+                <img src = "./img/icon_leaf.png">
+            </div>
+            <div class = "_aside_left _aside_ch">
+                <img src = "./img/try_img.jpg">
+                <!--vile:面纱 -->
+                <div class = "veil">
+                    <h2>试用中心</h2>
+                    <h5>新品免费试用</h5>
+                    <!--silk:丝绸  (遮罩层)-->
+                    <div class = "silk"></div>
+                    <!--移动的小线条-->
+                    <span class = "box"></span>
+                </div>
+                <!--square:移动的小方块-->
+                <a href = "#" class = "square">马上<br>试用</a>
+            </div>
+            <div class = "_aside_right _aside_ch">
+                <img src = "./img/exchange_img.jpg">
+                <div class = "veil">
+                    <h2>积分兑换</h2>
+                    <h5>会员积分免费兑换正装礼品</h5>
+                    <div class = "silk"></div>
+                    <span class = "box"></span>
+                </div>
+                <a href = "#" class = "square">立即<br>兑换</a>
+            </div>
+        </div>
+    </aside>
+    <section id = "vip">
+        <div class = "_vip">
+            <div class = "_vip_top">
+                <h3>成为会员</h3>
+                <h4>成为会员的三种方式</h4>
+                <h5>(即日起,只要你喜爱汇美舍,即可通过一下3种方式免费成为汇美舍预备会员)</h5>
+                <ul>
+                    <li>
+                        <p>官网注册</p>
+                        <p>在汇美舍官网注册成为官网用户即可</p>
+                    </li>
+                    <li>
+                        <img src = "./img/qr_code.gif">
+                        <p>微信登记</p>
+                        <p>关注汇美舍官方微信,在菜单栏:服务→会员服务,登记手机号码及姓名即可</p>
+                    </li>
+                    <li>
+                        <p>店铺登记</p>
+                        <p>到线下终端店铺或专柜登记手机号码，姓名，生日即可</p>
+                    </li>
+                </ul>
+            </div>
+            <div class = "_vip_button">
+                <h4>新会员权益</h4>
+                <ul>
+                    <li>收到汇美舍一手专业香薰文化资讯</li>
+                    <li>线上线下各色活动　优先参与权</li>
+                    <li>入会后首次任意消费即可成为正式会员，尊享会员回馈（积分抵现换礼，会员专享优惠，生日礼物）</li>
+                    <li>入会后首次消费满300元或以上，额外赠送300积分</li>
+                    <li>入会后首次消费满500元或以上，额外赠送800积分</li>
+                    <li>更多会员尊享权益，请继续关注</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------entrepreneurship：创业-->
+    <section id = "entrepreneurship">
+        <div class = "_entrepreneurship">
+            <div class = "_entrepreneurship_top">
+                <h4>芳香创业</h4>
+                <h5>芳香蓝海，无忧创业</h5>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper _entrepreneurship_banner">
+                    <div class="swiper-slide _entre_small"><img src = "./img/entrepreneurship-icon1.png">
+                        <p>异业跨界合作</p>
+                    </div>
+                    <div class="swiper-slide _entre_small"><img src = "./img/entrepreneurship-icon2.png">
+                        <p>互联网分销</p>
+                    </div>
+                    <div class="swiper-slide _entre_small"><img src = "./img/entrepreneurship-icon3.png">
+                        <p>芳香加工厂</p>
+                    </div>
+                    <div class="swiper-slide _entre_small"><img src = "./img/entrepreneurship-icon4.png">
+                        <p>实体连锁加盟</p>
+                    </div>
+                    <div class="swiper-slide _entre_small"><img src = "./img/entrepreneurship-icon5.png">
+                        <p>合伙人培养计划</p>
+                    </div>
+                    <div class="swiper-slide _entre_small"><img src = "./img/entrepreneurship-icon1.png">
+                        <p>异业跨界合作</p>
+                    </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev _prev"></div>
+                <div class="swiper-button-next _next"></div>
+            </div>
+        </div>
+    </section>
+    <!--<script>
+        var mySwiper = new Swiper('.swiper-container',{
+            slidesPerView : 3,
+            spaceBetween : 20,
+//spaceBetween : '10%',按container的百分比
+        })
+    </script>-->
+    <!----------------------brand:品牌-->
+    <section id = "brand">
+        <img src = "./img/brand_banner.png">
+        <div class = "_brand">
+            <a href = "#">
+                <h2>品牌印象馆</h2>
+                <button>点击进入</button>
+            </a>
+        </div>
+    </section>
+    <!--------------------------------------------     尾部-->
+    <footer>
+        <div class = "_footer">
+            <div class = "list">
+                <div class = "_list_child">
+                    <ul>
+                        <h3>服务合作</h3>
+                        <li>联系我们</li>
+                        <li>查找店铺</li>
+                        <li>代理商平台</li>
+                        <li>找回密码</li>
+                    </ul>
+                    <ul>
+                        <h3>特色服务</h3>
+                        <li>正品保证</li>
+                        <li>客服在线时间</li>
+                        <li>邮件订阅</li>
+                        <li>用户注册</li>
+                    </ul>
+                    <ul>
+                        <h3>购买服务</h3>
+                        <li>补邮费</li>
+                        <li>配送范围及运费</li>
+                        <li>验货与签收</li>
+                        <li>退换政策</li>
+                        <li>退货流程</li>
+                        <li>办理退款方式和时效</li>
+                    </ul>
+                </div>
+                <p class = "line"></p>
+            </div>
+            <div class = "_footer_logo">
+                <img src = "./img/logo2.gif">
+                <div class = "last">
+                    <p>Copyright © 2014 prettyvalley.cn All Rights Reserved <a href = "#">粤ICP备07067494号</a> 使用本站即表示接受汇美舍用户协议</p>
+                    <p>广州汇美舍天然用品连锁有限公司 Pretty Valley (GZ China) Natural Commodity Franchised Co.,Ltd.</p>
+                </div>
+            </div>
+        </div>
     </footer>
+    <!--fixation:固定-->
+    <div id = "fixation">
+        <div class = "_fixation">
+            <div class = "srevice _fixation_img">
+                <img src = "./img/icon_custom.png">
+                <span>在线客服</span>
+            </div>
+            <div class = "gotop _fixation_img">
+                <img src = "./img/icon_totop.png">
+                <span>返回顶部</span>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
