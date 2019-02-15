@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>details</title>
+    <link rel = "stylesheet" type = "text/css" href = "css/public.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "css/5.details.css"/>
+</head>
+<body>
+    <header>
+    <div id = "h_header">
+        <ul id = "h_logo">
+            <img src = "./img/logo.png">
+        </ul>
+        <ul id = "h_seach">
+            <li><img src = "./img/seach.png"/>
+            </li>
+            <li><img src = "./img/user.png"/>
+                <ul>
+                    <li><h2>您的账户</h2></li>
+                    <li><a href = "http://localhost:63342/untitled/WWW/1823/huimeishe/login.html" class="red" id = "write">登陆</a></li>
+                    <li><a href = "http://localhost:63342/untitled/WWW/1823/huimeishe/reg.html" class="red">注册新账号</a></li>
+                    <li><a href = "http://localhost:63342/untitled/WWW/1823/huimeishe/login.html"><i class="icon iconfont">&#xe620;</i>个人中心</a></li>
+                    <li><a href = "#"><i class=" icon iconfont">&#xe61c;</i>我的收藏</a></li>
+                    <li><a href = "#"><i class="icon iconfont">&#xe767;</i>购物车</a></li>
+                    <div class = "triangle">
+                        <div class = "triangle1"
+                    </div>
+                </ul>
+            </li>
+            <li><img src = "./img/EN.png"/>
+                <ul>
+                    <li><a href = "#" class="Enred"><img src = "./img/meiguo.png" class = "country">English</a></li>
+                    <li><a href = "#" class="Enred"><img src = "./img/jianada.png" class = "country">Canada</a></li>
+                    <li><a href = "#" class="Enred"><img src = "./img/yingguo.png" class = "country">America</a></li>
+                    <div class = "triangle">
+                        <div class = "triangle1"
+                    </div>
+                </ul>
+            </li>
+        </ul>
+        <ul id = "h_nav">
+            <li><a href = "#">芳疗课程</a></li>
+            <li><a href = "#">产品系列</a></li>
+            <li><a href = "#">进口产品</a></li>
+            <li><a href = "#">品牌印象馆</a></li>
+            <li><a href = "#">芳聊</a></li>
+            <li><a href = "#">芳香创业</a></li>
+        </ul>
+    </div>
+    <!--stealth:隐形-->
+    <div id = "stealth">
+        <div id = "nav_bg">
+            <div class="product">
+                <li>精油
+                    <!--<div class = "menu">
+                        <h3>精油分类</h3>
+                        <li><a href = "#">植物单方精油</a></li>
+                        <li><a href = "#">星座精油</a></li>
+                        <li><a href = "#">植物基础油</a></li>
+                        <li><a href = "#">空间精油</a></li>
+                        <li><a href = "#">面部复方精油</a></li>
+                        <li><a href = "#">养发复方精油</a></li>
+                        <li><a href = "#">复方滚珠精油</a></li>
+                        <li><a href = "#">家庭保健精油</a></li>
+                    </div>-->
+                </li>
+                <li>植物系列
+                    <ul>
+                        <h3>玫瑰</h3>
+                        <li><a href = "#">保加利亚大马士革玫瑰系列（平滑）
+                        </a></li>
+                        <li><a href = "#">橙花玫瑰系列（亮颜）</a></li>
+                        <li><a href = "#">玫瑰水润系列</a></li>
+                        <li><a href = "#">玫瑰檀香弹力紧实系列</a></li>
+                        <li><a href = "#">玫瑰乳木果莹润紧致系列</a></li>
+                        <li><a href = "#"></a></li>
+                    </ul>
+
+                    <ul>
+                        <h3>玫瑰</h3>
+                        <li><a href = "#">保加利亚大马士革玫瑰系列（平滑）
+                        </a></li>
+                        <li><a href = "#">橙花玫瑰系列（亮颜）</a></li>
+                        <li><a href = "#">玫瑰水润系列</a></li>
+                        <li><a href = "#">玫瑰檀香弹力紧实系列</a></li>
+                        <li><a href = "#">玫瑰乳木果莹润紧致系列</a></li>
+                        <li><a href = "#"></a></li>
+                    </ul>
+                </li>
+                <li>功效系列
+                </li>
+                <li>面部护理</li>
+                <li>身体护理</li>
+                <li>家居香氛</li>
+                <li>家居浴室</li>
+                <li>家居用品</li>
+                <li>礼品</li>
+            </div>
+        </div>
+        <div id = "nav_search">
+            <div class = "nav_search_child">
+                <input type = "text" placeholder="请输入您的查找内容">
+                <button>搜索</button>
+                <div class = "close">
+                    <img src = "./img/close.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <!---------------------------------------------------放大镜及其js-->
+    <section>
+        <div class = "_section">
+            <div class="container-magnifier">
+                <div class="wrap-small-magnifier">
+                    <img src="./img/magnifier_400_400.jpeg" alt="">
+                    <div class="focus"></div>
+                    <div class="patch">
+                        <!-- 其实这就是个贴膜 -->
+                    </div>
+                </div>
+                <div class="wrap-choice-magnifier">
+                    <i class="active"
+                       data-big="./img/magnifier_400_400.jpeg"
+                       data-small="./img/magnifier_400_400.jpeg"
+                    ><img src="./img/magnifier_400_400.jpeg" alt=""></i>
+                    <!-- <i
+                             data-big="./images/2.big.jpg"
+                             data-small="./images/2.jpg"
+                     ><img src="./images/2.small.jpg" alt=""></i>-->
+                </div>
+                <div class="wrap-big-magnifier">
+                    <img src="./img/magnifier800_800.jpeg" alt="">
+                </div>
+            </div>
+            <div id = "_right">
+                    <h1>水活晶透精华露 /35g</h1>
+                    <ul class = "_aside_price">
+                        <li class = "_price_child">
+                            <span>售  价：</span>
+                            <p>￥168.00</p>
+                        </li>
+                        <li class = "counter">
+                            <span>专柜价：</span>
+                            <p>￥168.00</p>
+                        </li>
+                        <li class = "letter_none">
+                            <span>赠送积分：</span>
+                            <p>168</p>
+                        </li>
+                    </ul>
+                    <div class = "goods font_similar">
+                        <span>货  号：</span>
+                        <p>AI010301-03</p>
+                    </div>
+                    <div class = "content font_similar">
+                        <span>净含量：</span>
+                        <p>35g</p>
+                    </div>
+                    <div class = "number">
+                        <span>数量：</span>
+                        <div class = "add">
+                            <a href = "#">-</a>
+                            <input type = "text" value = 1>
+                            <a href = "#">+</a>
+                        </div>
+                    </div>
+                    <div class = "buy">
+                        <a href = "#">
+                            立即购买
+                        </a>
+                        <a href = "#">
+                            加入购物车
+                        </a>
+                    </div>
+                    <div class = "share">
+                        <a href = "#">
+                            收藏商品
+                        </a>
+                        <a href = "#">
+                            分享
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // 1. 计算比例;
+        // 小图焦点;
+        var focus = document.querySelector(".focus");
+        // 大图焦点;
+        var big_wrap = document.querySelector(".wrap-big-magnifier");
+        var small_wrap = document.querySelector(".wrap-small-magnifier");
+        var big_bg = big_wrap.children[0];
+        var small_bg = small_wrap.children[0];
+        var choice_wrap = document.querySelector(".wrap-choice-magnifier");
+        var choice_items = choice_wrap.children;
+        // 计算比例;
+        // 这是小图和大图的缩放比;
+        // tip dispaly 设置结束之后用offset获取宽度和高度时是0;
+        var prop = parseInt(getComputedStyle(big_wrap)["width"]) / parseInt(getComputedStyle(focus)["width"]);
+        big_bg.style.width = prop * small_wrap.offsetWidth + "px";
+        big_bg.style.height = prop * small_wrap.offsetHeight + "px";
+        // canvas img ;
+        // 鼠标移入显示;
+        small_wrap.addEventListener("mouseenter" , toggle.bind(false,"show"));
+        small_wrap.addEventListener("mouseleave" , toggle.bind(false,"hide"));
+        function toggle(type){
+            var display = null;
+            if(type === "show"){
+                display = "block";
+            }else{
+                display = "none";
+            }
+            focus.style.display = display;
+            big_wrap.style.display = display;
+        }
+        small_wrap.addEventListener("mousemove",eleMove);
+        function eleMove(evt){
+            var e = evt || window.event;
+            var _left = e.offsetX;
+            var _top = e.offsetY;
+            // 边界检测;
+
+            _left = _left - focus.offsetWidth ;
+
+            _top = _top - focus.offsetHeight;
+            // 最小值边界判断;
+            _left = _left <= 0 ? 0 : _left;
+            _top = _top <= 0 ? 0 : _top;
+            // 最大值边界判断;
+            var maxLeft = small_wrap.offsetWidth - focus.offsetWidth;
+            console.log(maxLeft)
+            var maxTop =  small_wrap.offsetHeight - focus.offsetHeight;
+            _left = _left >= maxLeft ? maxLeft : _left;
+            _top = _top >= maxTop ? maxTop : _top;
+            // 边界检测 end;
+            // 左侧焦点移动;
+            focus.style.left = _left + "px";
+            focus.style.top = _top  + "px";
+            // 右侧背景移动;
+            big_bg.style.left = -_left * prop + "px";
+            big_bg.style.top = -_top * prop + "px";
+        }
+        choice_items = Array.from(choice_items);
+        choice_items.forEach((item)=>{
+            item.addEventListener("click",choice.bind(false,item))
+        })
+        function choice(item){
+            // 1. 怎么获取路径啊?  data-big  data-samll;
+            // 先清空;
+            // console.log(item);
+            choice_items.forEach((item)=>{
+                item.className = "";
+        })
+            // 给对应的目标添加acitve;
+            item.className = "active";
+            // 替换图片;
+            // 1. 获取数据;
+            var bigSrc = item.getAttribute("data-big");
+            var smallSrc = item.getAttribute("data-small");
+            // console.log(bigSrc,smallSrc);
+            small_bg.src = smallSrc;
+            big_bg.src = bigSrc;
+        }
+    </script>
+
+    <!-----------------------------------------------------------详情-->
+    <aside>
+        <div class = "_aside">
+            <div class = "Left">
+                <div class = "Left_top">
+                    <!--describe:描述-->
+                    <div class = "describe">
+                        <p>产品描述：</p>
+                    </div>
+                    <hr>
+                    <!--attribute：属性-->
+                    <div class = "attribute">
+                        <p>产品描述：</p>
+                    </div>
+                    <hr>
+                    <!--careful：注意-->
+                    <div class = "careful">
+                        <p>注意事项：</p>
+                    </div>
+                </div>
+                <div class = "Left_bottom">
+                    <span>
+                        <img src = "./img/big_img1.jpg">
+                        <img src = "./img/big_img2.jpg">
+                        <img src = "./img/big_img3.jpg">
+                        <img src = "./img/big_img4.jpg">
+                        <img src = "./img/big_img5.jpg">
+                        <img src = "./img/big_img6.jpg">
+                        <img src = "./img/big_img7.jpg">
+                        <img src = "./img/big_img8.jpg">
+                        <img src = "./img/big_img9.jpg">
+                    </span>
+                </div>
+            </div>
+            <div class = "Right">
+                <div class = "like">
+                    <h2>猜你喜欢</h2>
+                </div>
+                <ul class = "guess">
+                    <li>
+                        <a href = "#">
+                            <img src = "./img/goods_thumb5.jpeg">
+                        </a>
+                        <a>爽润洁面凝露120g/售馨</a>
+                        <p>
+                            <em>￥</em>
+                            <em>36</em>
+                        </p>
+                    </li>
+                    <li>
+                        <a href = "#">
+                            <img src = "./img/goods_thumb5.jpeg">
+                        </a>
+                        <a>爽润洁面凝露120g/售馨</a>
+                        <p>
+                            <em>￥</em>
+                            <em>36</em>
+                        </p>
+                    </li>
+                    <li>
+                        <a href = "#">
+                            <img src = "./img/goods_thumb5.jpeg">
+                        </a>
+                        <a>爽润洁面凝露120g/售馨</a>
+                        <p>
+                            <em>￥</em>
+                            <em>36</em>
+                        </p>
+                    </li>
+                    <li>
+                        <a href = "#">
+                            <img src = "./img/goods_thumb5.jpeg">
+                        </a>
+                        <a>爽润洁面凝露120g/售馨</a>
+                        <p>
+                            <em>￥</em>
+                            <em>36</em>
+                        </p>
+                    </li>
+                    <li>
+                        <a href = "#">
+                            <img src = "./img/goods_thumb5.jpeg">
+                        </a>
+                        <a>爽润洁面凝露120g/售馨</a>
+                        <p>
+                            <em>￥</em>
+                            <em>36</em>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!--------------------------------------------     尾部-->
+    <footer>
+        <div class = "_footer">
+            <div class = "list">
+                <div class = "_list_child">
+                    <ul>
+                        <h3>服务合作</h3>
+                        <li>联系我们</li>
+                        <li>查找店铺</li>
+                        <li>代理商平台</li>
+                        <li>找回密码</li>
+                    </ul>
+                    <ul>
+                        <h3>特色服务</h3>
+                        <li>正品保证</li>
+                        <li>客服在线时间</li>
+                        <li>邮件订阅</li>
+                        <li>用户注册</li>
+                    </ul>
+                    <ul>
+                        <h3>购买服务</h3>
+                        <li>补邮费</li>
+                        <li>配送范围及运费</li>
+                        <li>验货与签收</li>
+                        <li>退换政策</li>
+                        <li>退货流程</li>
+                        <li>办理退款方式和时效</li>
+                    </ul>
+                </div>
+                <p class = "line"></p>
+            </div>
+            <div class = "_footer_logo">
+                <img src = "./img/logo2.gif">
+                <div class = "last">
+                    <p>Copyright © 2014 prettyvalley.cn All Rights Reserved <a href = "#">粤ICP备07067494号</a> 使用本站即表示接受汇美舍用户协议</p>
+                    <p>广州汇美舍天然用品连锁有限公司 Pretty Valley (GZ China) Natural Commodity Franchised Co.,Ltd.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--fixation:固定-->
+    <div id = "fixation">
+        <div class = "_fixation">
+            <div class = "srevice _fixation_img">
+                <img src = "./img/icon_custom.png">
+                <span>在线客服</span>
+            </div>
+            <div class = "gotop _fixation_img">
+                <img src = "./img/icon_totop.png">
+                <span>返回顶部</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

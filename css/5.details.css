@@ -1,0 +1,289 @@
+html,body,div,ol,ul,li,h1,h2,h3,h4,h5,h6,img,span,p,a,i,form,label,legend,aside,article,footer,header,nav{
+    margin:0;padding:0;border:0;
+    font-weight: normal;
+}
+html,body{
+    width:100%;
+    background:#fff;
+}
+ul,li{
+    list-style: none;
+}
+img{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.icon{
+    font-size:18px;
+    color:#533831;
+}
+i,em{
+    font-style: normal;
+}
+/*--------------------------------------------------放大镜*/
+section{
+    margin-top:90px;
+    padding:75px 0;
+}
+._section{
+    width:1200px;
+    margin:auto;
+    overflow: hidden;
+}
+.container-magnifier{
+    margin-bottom: 30px;
+    margin:auto;
+    position: relative;
+    float:left;
+}
+/*.container-magnifier>div{
+    display: inline-block;
+}*/
+.wrap-small-magnifier{
+    width: 450px;
+    height: 450px;
+    margin:0;
+}
+.wrap-small-magnifier .patch{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.wrap-small-magnifier .focus{
+    width: 300px;
+    height: 300px;
+    background:#ccc;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.wrap-small-magnifier img{
+    width: 100%;
+    height: 100%;
+}
+.wrap-choice-magnifier {
+    padding-top: 15px;
+    /*margin-bottom: 30px;*/
+}
+.wrap-choice-magnifier i{
+    display: inline-block;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    width:58px;
+    height:58px;
+}
+.wrap-choice-magnifier i img{
+    width:100%;
+}
+.wrap-choice-magnifier i.active{
+    border-color: rgb(96,54,19);
+}
+.wrap-choice-magnifier i:hover{
+    border-color: rgb(96,54,19);
+}
+.wrap-big-magnifier{
+    box-sizing: border-box;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 455px;
+    top: 0;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    display: none;
+}
+.wrap-big-magnifier img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/*-----------------------------right*/
+#_right{
+    width: 550px;
+    float:left;
+    margin-left:2%;
+    margin-top:43px;
+}
+#_right h1{
+    font-size: 20px;
+    color: #555555;
+    margin: 20px 0;
+}
+#_right>ul{
+    margin-top:10px;
+    padding:20px 0 10px;
+    border-top: 1px dashed rgb(96,54,19);
+}
+#_right p{
+    display: inline-block;
+}
+#_right span{
+    font-size: 14px;
+    color:#666;
+    line-height:32px;
+    letter-spacing: 6px;
+    width: 82px;
+    display: inline-block;
+}
+._price_child p{
+    font-size: 28px;
+    color: rgb(96,54,19);
+}
+#_right .letter_none span{
+    letter-spacing: 1px;
+}
+.counter p{
+    color: #666666;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+#_right .letter_none p{
+    color: white;
+    background: rgb(96,54,19);
+    padding: 7px 10px;
+    font-size: 12px;
+}
+.font_similar{
+    font-size: 14px;
+    color: #666;
+}
+.number{
+    overflow: hidden;
+}
+.number span{
+    float:left;
+}
+.add{
+    float:left;
+    margin-right: 42%;
+}
+.add a{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #dadada;
+    color: #666;
+    float:left;
+}
+.add input{
+    width: 38px;
+    height: 28px;
+    border: 1px solid #dadada;
+    text-align: center;
+    color: #666;
+    float:left;
+}
+.buy a{
+    background: rgb(96,54,19);
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 55px;
+    border: 1px solid rgb(96,54,19);
+    margin:25px 0;
+}
+.buy a:hover{
+    background: #fff;
+    border: 1px solid rgb(96,54,19);
+    color: rgb(96,54,19);
+}
+.share{
+    border-top: 1px dashed rgb(96,54,19);
+    padding-top:10px;
+    margin-top:5px;
+}
+.share a{
+    font-size: 14px;
+    color:#666;
+}
+/*-----------------------------------------------图片详情*/
+aside{
+    width:100%;
+}
+._aside{
+    width:1200px;
+    margin:auto;
+    background:#fff;
+    overflow: hidden;
+}
+.Left{
+    margin-right:20px;
+    width: 75%;
+    float:left;
+}
+.Left_top{
+    border:1px solid #ccc;
+}
+.Left_top>div{
+    padding:20px;
+}
+.Left_top p{
+    font-size: 16px;
+    line-height:29px;
+}
+.Left_top hr{
+    height: 1px;
+    border: none;
+    background: #f8f8f8;
+    margin: 0;
+}
+.Left_bottom{
+    margin-top:20px;
+    padding-top: 20px;
+    border: 1px solid #ececec;
+}
+.Left_bottom span{
+    padding: 0 20px 20px 20px;
+    display: block;
+}
+.Left_bottom img{
+    display: block;
+    width:100%;
+}
+.Right{
+    float:right;
+    width:23%;
+}
+.like{
+    background-color: #fafafa;
+    padding: 20px 20px 0 20px;
+    text-align: center;
+}
+.like h2{
+    font-size:16px;
+    color:#666;
+    line-height:50px;
+}
+.like ul li{
+    margin:10px 0;
+    padding:5px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 5px;
+    text-align: center;
+}
+.guess li:hover{
+    box-shadow: 0px 0px 16px #bfbebe;
+    z-index: 1;
+}
+.guess li>a{
+    width:100%;
+    color:#666;
+    font-size:14px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.guess li p{
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 10px;
+}

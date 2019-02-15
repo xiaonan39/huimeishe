@@ -1,0 +1,174 @@
+html,body,div,ol,ul,li,h1,h2,h3,h4,h5,h6,img,span,p,a,i,form,label,legend,aside,article,footer,header,nav{
+    margin:0;padding:0;border:0;
+    font-weight: normal;
+}
+html,body{
+    width:100%;
+    background:#fff;
+}
+ul,li{
+    list-style: none;
+}
+img{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.icon{
+    font-size:18px;
+    color:#533831;
+    padding:0 10px;
+}
+/*-------------------------------------------reg*/
+section{
+    width:100%;
+    background:#f7f7f7;
+    margin-top:90px;
+}
+._section{
+    overflow:hidden;
+    width:1200px;
+    margin:auto;
+    padding-bottom: 130px;
+}
+.blank{
+    width:100%;
+    height:130px;
+}
+._section>h2{
+    font-size:24px;
+    color:rgb(102, 102, 102);
+    margin-bottom:20px;
+    line-height:24px;
+}
+.reg,.login{
+    width: 420px;
+    height: 280px;
+    padding: 20px 30px;
+    border:1px solid #ccc;
+}
+.reg{
+    float:left;
+}
+.login{
+    float:right;
+}
+/*
+._reg{
+    padding:
+}*/
+._section h4{
+    color:#666;
+    font-size:20px;
+    line-height:20px;
+}
+._section p{
+    width:100%;
+    height:1px;
+    border-bottom:1px dashed #666;
+    margin-top:30px;
+}
+.reg span{
+    font-size: 13px;
+    color:#666;
+    line-height:14px;
+}
+.reg button{
+    border:0;
+    background:transparent;
+    margin-top: 45px;
+    float: right;
+}
+.reg a{
+    background: rgb(96,54,19);
+    padding: 5px 10px;
+    display: block;
+    color: #fff;
+}
+form{
+    overflow: hidden;
+}
+label{
+    display: inline-block;
+    width: 128px;
+    height:38px;
+    text-align: left;
+    font-size:14px;
+    color:#333;
+    line-height:38px;
+    margin-top:24px;
+    /*float:left;*/
+}
+input{
+    height: 23px;
+    font-size:14px;
+    color:#ccc;
+    padding: 0 5px;
+}
+form>input{
+    width:278px;
+    margin-top:24px;
+    float:right;
+}
+
+.Verification{
+    text-align: right;
+}
+.Verification input{
+    width:115px;
+}
+.Verification>img{
+    margin:0 15px;
+    width:100px;
+    height:28px;
+    vertical-align: middle;
+}
+.ch_img img{
+    width:28px;
+    height:28px;
+    vertical-align: middle;
+}
+.land{
+    margin-top:15px;
+}
+.land button{
+    width:70px;
+    height:30px;
+    background-color: rgb(96,54,19);
+    border:0;
+    color:#fff;
+    margin-left:128px;
+}
+.land a{
+    float:right;
+    line-height:30px;
+    color:rgb(102, 102, 102);
+}
+.others{
+    margin-top:15px;
+    color:rgb(102, 102, 102);
+    position:relative;
+}
+.others a{
+    width:30px;
+    height:30px;
+}
+.others .qq{
+    background: url(../img/enterprise.png) no-repeat 0 0;
+}
+.others .qq:hover{
+    background: url(../img/enterprise.png) no-repeat -30px 0;
+}
+.others .weixin{
+    background: url(../img/weixinl.png) no-repeat 0 0;
+}
+.others .weixin:hover{
+    background: url(../img/weixinl.png) no-repeat -30px 0;
+}
+.others span{
+    margin-left:128px;
+    margin-right:10px;
+    vertical-align: top;
+}

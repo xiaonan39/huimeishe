@@ -23,9 +23,9 @@
                 <li><img src = "./img/user.png"/>
                     <ul>
                         <li><h2>您的账户</h2></li>
-                        <li><a href = "#" class="red" id = "write">登陆</a></li>
-                        <li><a href = "#" class="red">注册新账号</a></li>
-                        <li><a href = "#"><i class="icon iconfont">&#xe620;</i>个人中心</a></li>
+                        <li><a href = "http://localhost:63342/untitled/WWW/1823/huimeishe/login.html" class="red" id = "write">登陆</a></li>
+                        <li><a href = "http://localhost:63342/untitled/WWW/1823/huimeishe/reg.html" class="red">注册新账号</a></li>
+                        <li><a href = "http://localhost:63342/untitled/WWW/1823/huimeishe/login.html"><i class="icon iconfont">&#xe620;</i>个人中心</a></li>
                         <li><a href = "#"><i class=" icon iconfont">&#xe61c;</i>我的收藏</a></li>
                         <li><a href = "#"><i class="icon iconfont">&#xe767;</i>购物车</a></li>
                         <div class = "triangle">
@@ -113,15 +113,19 @@
                 </div>
             </div>
         </div>
-
     </header>
+
     <!---------------------------------------轮播图及其js-->
     <article>
         <div class="swiper-container banner">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src = "./img/banner5.jpg"></div>
-                <div class="swiper-slide"><img src = "./img/banner6.jpg"></div>
-                <div class="swiper-slide"><img src = "./img/banner7.jpg"></div>
+            <div class="swiper-wrapper _banner">
+                <div class="swiper-slide">
+                    <!--<img src = "./img/banner20161118_bg.jpg">-->
+                    <img src="img/banner20180212_bg.jpg">
+                    <a href = "http://localhost:63342/untitled/WWW/1823/huimeishe/reg.html"></a>
+                </div>
+                <div class="swiper-slide"><img src = "./img/banner20180208_bg.jpg"></div>
+                <div class="swiper-slide"><img src = "./img/banner_big_xiang.jpg"></div>
             </div>
             <!-- 如果需要分页器 -->
             <div class="swiper-pagination"></div>
@@ -147,8 +151,10 @@
             },
         })
     </script>
+
     <!-----------------------------------------芳香艺设-->
-    <main>
+    <!--0213改版前-->
+    <!--<main>
         <div class = "_main">
             <div class = "top">
                 <div class = "top_left">
@@ -191,6 +197,12 @@
             </div>
         </div>
 
+    </main>-->
+    <!--改版后-->
+    <main>
+        <div class = "bigimg">
+            <img src = "./img/20180313_02.jpg">
+        </div>
     </main>
     <aside>
         <div class = "_aside">
@@ -258,8 +270,9 @@
             </div>
         </div>
     </section>
+
     <!----------------------------------entrepreneurship：创业-->
-    <section id = "entrepreneurship">
+    <!--<section id = "entrepreneurship">
         <div class = "_entrepreneurship">
             <div class = "_entrepreneurship_top">
                 <h4>芳香创业</h4>
@@ -286,15 +299,15 @@
                         <p>异业跨界合作</p>
                     </div>
                 </div>
-                <!-- 如果需要分页器 -->
+                &lt;!&ndash; 如果需要分页器 &ndash;&gt;
                 <div class="swiper-pagination"></div>
 
-                <!-- 如果需要导航按钮 -->
+                &lt;!&ndash; 如果需要导航按钮 &ndash;&gt;
                 <div class="swiper-button-prev _prev"></div>
                 <div class="swiper-button-next _next"></div>
             </div>
         </div>
-    </section>
+    </section>-->
     <!--<script>
         var mySwiper = new Swiper('.swiper-container',{
             slidesPerView : 3,
@@ -302,8 +315,10 @@
 //spaceBetween : '10%',按container的百分比
         })
     </script>-->
-    <!----------------------brand:品牌-->
-    <section id = "brand">
+
+    <!---------------------------------------------brand:品牌-->
+    <!--改版前-->
+    <!--<section id = "brand">
         <img src = "./img/brand_banner.png">
         <div class = "_brand">
             <a href = "#">
@@ -311,7 +326,14 @@
                 <button>点击进入</button>
             </a>
         </div>
+    </section>-->
+    <!--改版后-->
+    <section id = "brand">
+        <div class = "_brand">
+            <img src = "./img/cooperation_title.jpg">
+        </div>
     </section>
+
     <!--------------------------------------------     尾部-->
     <footer>
         <div class = "_footer">
@@ -319,26 +341,26 @@
                 <div class = "_list_child">
                     <ul>
                         <h3>服务合作</h3>
-                        <li>联系我们</li>
-                        <li>查找店铺</li>
-                        <li>代理商平台</li>
-                        <li>找回密码</li>
+                        <li><a href = "#">联系我们</a></li>
+                        <li><a href = "#">查找店铺</a></li>
+                        <li><a href = "#">代理商平台</a></li>
+                        <li><a href = "#">找回密码</a></li>
                     </ul>
                     <ul>
                         <h3>特色服务</h3>
-                        <li>正品保证</li>
-                        <li>客服在线时间</li>
-                        <li>邮件订阅</li>
-                        <li>用户注册</li>
+                        <li><a href = "#">正品保证</a></li>
+                        <li><a href = "#">客服在线时间</a></li>
+                        <li><a href = "#">邮件订阅</a></li>
+                        <li><a href = "#">用户注册</a></li>
                     </ul>
                     <ul>
                         <h3>购买服务</h3>
-                        <li>补邮费</li>
-                        <li>配送范围及运费</li>
-                        <li>验货与签收</li>
-                        <li>退换政策</li>
-                        <li>退货流程</li>
-                        <li>办理退款方式和时效</li>
+                        <li><a href = "#">补邮费</a></li>
+                        <li><a href = "#">配送范围及运费</a></li>
+                        <li><a href = "#">验货与签收</a></li>
+                        <li><a href = "#">退换政策</a></li>
+                        <li><a href = "#">退货流程</a></li>
+                        <li><a href = "#">办理退款方式和时效</a></li>
                     </ul>
                 </div>
                 <p class = "line"></p>

@@ -1,0 +1,129 @@
+html,body,div,ol,ul,li,h1,h2,h3,h4,h5,h6,img,span,p,a,i,form,label,legend,aside,article,footer,header,nav{
+    margin:0;padding:0;border:0;
+    font-weight: normal;
+}
+html,body{
+    width:100%;
+    background:#fff;
+}
+ul,li{
+    list-style: none;
+}
+img{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.icon{
+    font-size:18px;
+    color:#533831;
+    padding:0 10px;
+}
+/*-----------------------------------------section*/
+
+section{
+    width:100%;
+    background:#f7f7f7;
+    margin-top:90px;
+}
+._section{
+    overflow:hidden;
+    width:1100px;
+    margin:auto;
+    margin-top:90px;
+    padding:60px 0;
+    /*padding:150px 0;*/
+}
+.dashed{
+    padding-bottom: 30px;
+    border-bottom: 1px dashed rgb(96,54,19);
+    margin:20px 0 30px 0;
+}
+.dashed h2{
+    font-size: 36px;
+    color: rgb(96,54,19);
+    line-height:53px;
+    text-align: center;
+}
+form{
+    padding:40px;
+    background:#fff;
+}
+.register{
+    padding-left:60px;
+}
+.register>div{
+    margin-left:288px;
+}
+.register input{
+    font-size:12px;
+    color:#666;
+    height:40px;
+    line-height: 53px;
+    padding-left:10px;
+    margin-bottom: 22px;
+    margin-right:10px;
+    background:#f7f7f7;
+    border: 1px solid #ccc;
+}
+.similar_input input,button{
+    width: 340px;
+}
+.short input{
+    width:153px;
+}
+.img_code>img{
+    width: 140px;
+    height: 42px;
+    margin-left:5px;
+    vertical-align: middle;
+}
+.img_code a img{
+    width:40px;height:40px;
+    vertical-align: middle;
+}
+.phone_code a{
+    width:140px;
+    height:42px;
+    color:rgb(44,33,20);
+    line-height:42px;
+    margin-left:5px;
+    font-size: 12px;
+    text-align: center;
+    border:1px solid rgb(44,33,20);
+}
+.check{
+    margin:10px 0;
+    font-size: 12px;
+}
+.check input{
+    vertical-align: middle;
+    width:13px;
+    height:13px;
+    margin:0 5px 0 0;
+}
+button{
+    height:40px;
+    color:rgb(44,33,20);
+    line-height:40px;
+    text-align: center;
+    font-size:18px;
+    border: 1px solid rgb(44,33,20);
+    margin: 15px 0 10px 0;
+    background:#fff;
+}
+button:hover{
+    background:rgb(44,33,20);
+    color:#fff;
+}
+.confirm>a{
+    display: block;
+    color: #666;
+    font-size: 12px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    width: 45%;
+}
