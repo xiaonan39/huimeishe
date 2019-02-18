@@ -1,26 +1,4 @@
-html,body,div,ol,ul,li,h1,h2,h3,h4,h5,h6,img,span,p,a,i,form,label,legend,aside,article,footer,header,nav{
-    margin:0;padding:0;border:0;
-    font-weight: normal;
-}
-html,body{
-    width:100%;
-    background:#fff;
-}
-ul,li{
-    list-style: none;
-}
-img{
-    display: inline-block;
-}
-a{
-    text-decoration: none;
-    display: inline-block;
-}
-.icon{
-    font-size:18px;
-    color:#533831;
-    padding:0 10px;
-}
+
 /*-------------------------------------------reg*/
 section{
     width:100%;

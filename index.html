@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <title>汇美舍</title>
     <link rel = "stylesheet" type = "text/css" href = "css/1.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "css/public.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
     <!---------------------------------------阿里图标-->
     <link rel = "stylesheet" type = "text/css" href = "./css/download/font_1ntehop46t8/iconfont.css">
     <!------------------------------------插件-->
-    <script src = "https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src = "js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
 </head>
 <body>
     <header>
         <div id = "h_header">
             <ul id = "h_logo">
-                <img src = "./img/logo.png">
+                <a href = "http://localhost:63681/untitled/WWW/1823/huimeishe/index.html#">
+                    <img src = "./img/logo.png">
+                </a>
+
             </ul>
             <ul id = "h_seach">
                 <li>
@@ -53,13 +57,10 @@
                 <li><a href = "#">芳香集结</a></li>
                 <li><a href = "#">创业计划</a></li>
             </ul>
-            <script>
-
-            </script>
         </div>
         <!--stealth:隐形-->
         <div id = "stealth">
-            <div id = "nav_bg">
+            <div class = "nav_bg">
                     <div class="product">
                         <li>精油
                             <!--menu：菜单-->
@@ -254,7 +255,21 @@
             </div>
         </div>
     </header>
-
+    <script>
+        $("#h_nav li").mousemove(function(){
+            $(".nav_bg").css("display","block");
+            $(".product li").appendChild($(menu))
+        });
+        $(".stealth").mouseout(function(){
+            $(".nav_bg").css("display","none")
+        });
+        $(".h_seach").click(function(){
+            $("#nav_search").css("display","block")
+        });
+        $(".close").click(function(){
+            $("#nav_search").css("display","none")
+        })
+    </script>
     <!---------------------------------------轮播图及其js-->
     <article>
         <div class="swiper-container banner">
@@ -262,12 +277,12 @@
                 <div class="swiper-slide">
                     <!--<img src = "./img/banner20161118_bg.jpg">-->
                     <img src="img/banner20180212_bg.jpg">
-                    <a href = "http://localhost:63342/untitled/WWW/1823/huimeishe/details.html"></a>
+                    <a href = "http://localhost:63681/untitled/WWW/1823/huimeishe/details.html#"></a>
                 </div>
                 <div class="swiper-slide"><img src = "./img/banner20180208_bg.jpg">
-                    <a href = "http://localhost:63342/untitled/WWW/1823/huimeishe/details.html"></a></div>
+                    <a href = "http://localhost:63681/untitled/WWW/1823/huimeishe/details.html#"></a></div>
                 <div class="swiper-slide"><img src = "./img/banner_big_xiang.jpg">
-                    <a href = "http://localhost:63342/untitled/WWW/1823/huimeishe/details.html"></a></div>
+                    <a href = "http://localhost:63681/untitled/WWW/1823/huimeishe/details.html#"></a></div>
             </div>
             <!-- 如果需要分页器 -->
             <div class="swiper-pagination"></div>
