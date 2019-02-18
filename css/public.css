@@ -349,13 +349,11 @@ footer{
     position: absolute;
     bottom: 2%;
 }
-._fixation_img{
-    /*width:35px;*/
-}
 ._fixation_img img{
     width:35px;
     position: absolute;
     margin-bottom: 10px;
+    cursor:pointer;
 }
 ._fixation_img span{
     display: inline-block;
@@ -367,18 +365,31 @@ footer{
     font-size:12px;
     position:absolute;
     text-align: center;
+    left: 35px;
+    display: none;
 }
 .srevice img{
-    top: 12%;;
+    top: 12%;
 }
-.gotop img{
+.gotop img {
     top: 61%;
 }
 .srevice span{
     top: 13%;
-    right: -76px;
 }
 .gotop span{
     top: 62%;
     right: -76px;
+}
+.srevice img:hover +span{
+    display: block;
+
+    transition: left 2s ease 2s;
+    left: -74px;
+    /*transform: scaleY(0.3);*/
+}
+.gotop img:hover +span{
+    display: block;
+    transition: left 2s ease 0s;
+    left: -74px;
 }
